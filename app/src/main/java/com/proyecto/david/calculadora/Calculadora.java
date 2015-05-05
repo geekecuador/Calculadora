@@ -4,27 +4,34 @@ package com.proyecto.david.calculadora;
  * Created by david on 4/28/15.
  */
 public class Calculadora {
+    private  Double valor_inicial=0.0, valor_final=0.0;
 
-  float parametro=0;
-    public float sumar(float dato){
-
-       return  this.parametro = this.parametro + dato;
-    }
-    public float restar(float dato){
-        return  this.parametro = this.parametro - dato;
-    }
-    public float multiplicar(float dato){
-        return  this.parametro = this.parametro * dato;
-    }
-    public float dividir(float dato){
-        return  this.parametro = this.parametro / dato;
+    public void setValor_inicial(Double valor_inicial) {
+        this.valor_inicial = valor_inicial;
     }
 
-    public void setParametro(float parametro) {
-        this.parametro = parametro;
+    public void setValor_final(Double valor_final) {
+        this.valor_final = valor_final;
     }
 
-    public float getParametro() {
-        return parametro;
+    public double sumar(){
+
+        return this.valor_inicial+valor_final;
     }
+    public double restar(){
+
+        return this.valor_inicial-valor_final;
+    }
+    public double multiplicar(){
+
+        return this.valor_inicial*valor_final;
+    }
+    public double divir(){
+
+        return this.valor_inicial/valor_final;
+    }
+
+
+
+
 }
